@@ -1,0 +1,524 @@
+@font-face {
+    font-family: sofiaProBlack;
+    src: url("./font/Sofia\ Pro\ Black.ttf")
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    height: 100%;
+    width: 5vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #014B94;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logoHeader{
+    background-image: url('https://www.pepsi.pl/img/logo.svg');
+    background-repeat: no-repeat;
+    width: 68px;
+    height: 104px;
+    margin: 20px 16px 0 16px;
+}
+.logoHeader:hover{
+    cursor: pointer;
+}
+.activeMenu{
+    width: 100%;
+    height: 104px;
+    background-image: url('./img/icons8-x-50.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F1F1F1;
+}
+.hamburgerMenu{
+    width: 100%;
+    height: 104px;
+    background-image: url('./img/icons8-menu-55.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hamburgerMenu:hover{
+    background-color: #0058b1;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s linear;
+    margin-left: 5vw;
+    max-width: 95vw;
+    min-width: 87vw;
+}
+.bigBanner{
+    flex-basis: 0;
+    flex-grow: 2;
+    min-width: 42vw;
+    max-width: 47.5vw;
+    height: 47vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mediumBanner{
+    flex-basis: 0;
+    flex-grow: 2;
+    height: 24vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.smallBanner{
+    flex-basis: 0;
+    flex-grow: 1;
+    height: 24vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contentCreators{
+    background-image: url('https://www.pepsi.pl/img/pepsi_pcc_square.png');
+}
+.followYourTaste{
+    background-image: url('./img/psstBanner.png');
+}
+.visualBanner{
+    background-image: url('./img/pepsiVisualBanner.jpg');
+    min-width: 44vw;
+    max-width: 47.5vw;
+    transition: box-shadow 1s linear;
+}
+.sliderBannerContainer{
+    max-width: 23.75vw;
+    height: 24vw;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+.slider{
+    min-width: 700%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+.container{
+    max-width: 23.75vw;
+    position: relative;
+}
+.slide{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.dotsContainer{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    width: 10vw;
+    height: 1vw;
+    top: 90%;
+    left: 10%;
+    position: absolute;
+}
+.dot{
+    width: 2vw;
+    height: 1vw;
+    background-color: rgb(62, 166, 219);
+}
+.activeDot{
+    background-color: #fff;
+}
+
+.contactUs{
+    position: relative;
+}
+#rockstarEnergy{
+    top: 60%;
+}
+#infoContactUs{
+    top: 75%;
+}
+.contactUsSpan{
+    color:#ffffff;
+}
+.info{
+    color: #014B94;
+    top: 70%;
+    left: 10%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family: sofiaProBlack;
+    font-size: 1vw;
+    line-height: 1.2em;
+}
+.sideMenu{
+    width: 0;
+    height: 0;
+    background-color: #F1F1F1;
+    position:fixed;
+    padding: 0;
+    left: 5vw;
+    top: -24px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    transition: width 0.4s linear;
+}
+.sideMenu li{
+    font-family: sofiaProBlack;
+    font-size: 0.75vw;
+    width: 100%;
+    height: 3vw;
+    text-align: left;
+    color: #014B94;
+    border-bottom: 2px solid #E0E0E0;
+    margin-top: 0.5vw;
+    margin-left: 15px;
+}
+.firstSpan{
+    color: #014B94;
+    font-weight: 600;
+}
+.secondSpan{
+    color:rgb(62, 166, 219)
+}
+.contactUs{
+    background-image: url('https://www.pepsi.pl/img/swipe7_contact.jpg');
+    transition: box-shadow 0.1s;
+}
+.contactUs:hover{
+    box-shadow: inset 0px 0px 0px 14px rgba(182, 183, 213, 1);
+}
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: box-shadow 0.1s;
+}
+.shadow:hover{
+    box-shadow: inset 0px 0px 0px 14px rgba(182, 183, 213, 1);
+    cursor: pointer;
+}
+footer{
+    min-width: 87vw;
+    height: 5vw;
+    font-size: 1vw;
+    transition: all 0.5s ease-in-out;
+    font-family: sofiaProBlack;
+    color: #015CB5;
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.credits{
+    max-width: 40vw;
+    min-width: 30vw;
+}
+.socials{
+    max-width: 25vw;
+    min-width: 15vw;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.social{
+    max-width: 5vw;
+    height: 5vh;
+}
+.facebook{
+    background-image: url('');
+}
+.logoFotter{
+    background-image: url('./img/pepsiLogoFooter.png');
+    width: 10vw;
+    height: 10vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.backgroundBanner{
+    width: 0;
+    height: 0;
+}
+/* Responsive-tablet*/
+@media only screen and (max-width: 1023px) {
+    main{
+        margin-left: 10vw;
+        max-width: 90vw;
+    }
+    header{
+        width: 10vw;
+    }
+    .bigBanner{
+        min-width: 90vw;
+        height: 90vw;
+    }
+    .mediumBanner{
+        min-width: 90vw;
+        height: 40vw;
+    }
+    .smallBanner{
+        flex-basis: 0;
+        flex-grow: 2;
+        min-width: 40vw;
+        max-width: 45vw;
+        height: 40vw;
+    }
+    .sliderBannerContainer{
+        flex-basis: 0;
+        flex-grow: 0;
+        min-width: 45vw;
+        height: 40vw;
+    }
+    .slider{
+        min-width: 700%;
+    }
+    .container{
+        min-width: 45vw;
+        height: 40vw;
+    }
+    .slide{
+        min-width: 45vw;
+        height: 40vw;
+    }
+    .sideMenu{
+        left: 10vw;
+        padding: 0;
+        z-index: 5;
+    }
+    .sideMenu li{
+        font-size: 2vw;
+        margin-top: 2vw;
+        margin-left: 5px;
+    }
+    .info{
+        font-size: 2vw;
+    }
+    footer{
+        min-width: 87vw;
+        height: 10vw;
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+    .credits{
+        min-width: 80vw;
+    }
+    .socials{
+        min-width: 40vw;
+    }
+    .logoFotter{
+        width: 30vw;
+        height: 10vw;
+    }
+  }
+/*Responsive-big-tel*/
+@media only screen and (max-width: 767px) {
+    main{
+        margin-left: 0;
+        min-width: 100vw;
+    }
+    header{
+        width: 100%;
+        height: 15vw;
+        position:static;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hamburgerMenu{
+        width: 104px;
+        height: 100%;
+    }
+    .activeMenu{
+        width: 104px;
+        height: 100%;
+    }
+    .bigBanner{
+        min-width: 100vw;
+        height: 100vw;
+    }
+    .mediumBanner{
+        min-width: 100vw;
+        height: 50vw;
+    }
+    .smallBanner{
+        min-width: 50vw;
+        height: 50vw;
+    }
+    .sliderBannerContainer{
+        min-width: 50vw;
+        height: 50vw;
+    }
+    .slider{
+        min-width: 700%;
+    }
+    .container{
+        min-width: 50vw;
+        height: 50vw;
+    }
+    .slide{
+        min-width: 50vw;
+        height: 50vw;
+    }
+    .sideMenu{
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 0;
+        padding: 0;
+        margin: 0;
+        transition: height 0.4s linear;
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sideMenu li{
+        width: 30vw;
+        font-size: 2vw;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    footer{
+        min-width: 100vw;
+        height: 25vw;
+        font-size: 14px;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    .credits{
+        min-width: 80vw;
+    }
+    .socials{
+        min-width: 45vw;
+    }
+    .social{
+        max-width: 5vw;
+        height: 5vh;
+    }
+    .logoFotter{
+        background-image: url('./img/pepsiLogoFooter.png');
+        width: 30vw;
+        height: 10vw;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+  }
+/*Responsive-tel*/
+@media only screen and (max-width: 479px){
+    header{
+        width: 100%;
+        height: 25vw;
+        position:static;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sideMenu{
+        height: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .smallBanner{
+        min-width: 50vw;
+        height: 50vw;
+        display: flex;
+    }
+    .smallBanner:hover{
+        box-shadow: none;
+        cursor: pointer;
+    }
+    .sideMenu li{
+        width: 100vw;
+        font-size: 2.5vw;
+        margin-top: 20px;
+        margin-left: 15px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    .sliderBannerContainer{
+        min-width: 100vw;
+        height: 50vw;
+    }
+    .slider{
+        min-width: 700%;
+    }
+    .container{
+        min-width: 100vw;
+        height: 50vw;
+        display: flex;
+    }
+    .slide{
+        min-width: 50vw;
+        height: 50vw;
+    }
+    .backgroundBanner{
+        min-width: 50vw;
+        min-height: 50vw;
+        background-color: #015CB5;
+    }
+    .shadow:hover{
+        box-shadow: none;
+        cursor: pointer;
+    }
+    .info{
+        color: #808080;
+        top: 40%;
+        left: 55vw;
+        font-size: 5vw;
+        z-index: 100;
+        line-height: 1.2em;
+    }
+    .firstSpan{
+        color:#ffffff;
+    }
+    .dotsContainer{
+        gap: 2px;
+        width: 35vw;
+        height: 2vw;
+        top: 85%;
+        left: 55vw;
+        position: absolute;
+    }
+    .dot{
+        width: 5vw;
+        height: 2vw;
+        background-color: rgb(62, 166, 219);
+    }
+    .activeDot{
+        background-color: #fff;
+    }
+    #rockstarEnergy{
+        top: 20%;
+    }
+    #infoContactUs{
+        font-size: 4vw;
+        top: 50%;
+        left: 55vw;
+    }
+    #infoContactUs::before{
+        content: '';
+        width: 6vw;
+        height: 2vw;
+        background-color: #E0E0E0;
+        position: absolute;
+        top: 120%;
+    }
+    
+}
