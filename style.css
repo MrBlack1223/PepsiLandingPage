@@ -479,7 +479,7 @@ footer{
     }
     .info{
         color: #808080;
-        top: 40%;
+        top: 20%;
         left: 55vw;
         font-size: 5vw;
         z-index: 100;
@@ -490,22 +490,22 @@ footer{
     }
     .dotsContainer{
         gap: 2px;
-        width: 35vw;
-        height: 2vw;
-        top: 85%;
-        left: 55vw;
+        width: 49vw;
+        height: 4vw;
+        top: 40vw;
+        left: 50.5vw;
         position: absolute;
     }
     .dot{
-        width: 5vw;
-        height: 2vw;
+        width: 7vw;
+        height: 4vw;
         background-color: rgb(62, 166, 219);
     }
     .activeDot{
         background-color: #fff;
     }
     #rockstarEnergy{
-        top: 20%;
+        top: 5%;
     }
     #infoContactUs{
         font-size: 4vw;
